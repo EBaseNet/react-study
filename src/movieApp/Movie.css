@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+.loading {
+  @apply max-w-2xl mx-auto px-4 py-8;
+}
+
+
+/* ─────────────── MivieApp */
+.app-container {
+  @apply max-w-2xl mx-auto px-4 py-8;
+}
+.movie-ul {
+  @apply grid grid-cols-2 gap-6 list-none p-0;
+}
+
+/* ─────────────── MovieItem */
+.movie-card {
+  @apply rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white;
+}
+.movie-poster {
+  @apply w-full object-cover;
+}
+.movie-info {
+  @apply p-3;
+}
+.movie-title {
+  @apply text-sm font-black leading-tight mb-1 line-clamp-2;
+}
+.movie-director {
+  @apply text-xs text-gray-500;
+}
+
+/* ─────────────── MovieDetail */
+.detail-back {
+  @apply inline-block mb-10 text-sm text-blue-500;
+}
+.detail-card {
+  @apply flex flex-col items-center gap-6;
+}
+
+.detail-poster {
+  @apply w-96 rounded-xl shadow-lg object-cover;
+}
+.detail-title {
+  @apply text-3xl font-black leading-tight;
+}
+
+.detail-info { /* 설명란 */
+  @apply w-full flex flex-col gap-3;
+}
+.detail-description {
+  @apply text-sm text-gray-700 p-4;
+}
+.detail-director {
+  @apply text-sm mt-3 text-gray-500 ;
+}
+.detail-release {
+  @apply text-sm text-gray-500;
+}
